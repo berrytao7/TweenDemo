@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:maskimage="http://schemas.android.com/apk/res/com.example.tween"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical" 
+   android:background="#708069">
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+        android:id="@+id/btn1"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:text="呼吸效果100%--20%"/>
+    <Button 
+        android:id="@+id/btn2"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:text="抖动效果20度"/>
+    
+    <Button 
+        android:id="@+id/btn3"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+         android:text="逆时针旋转效果80度"/>
+    
+     <Button 
+        android:id="@+id/btn4"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+         android:text="向右跑马灯效果"/> 
+          <Button 
+        android:id="@+id/btn5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+         android:background="@drawable/jui_more_bg"/> 
+          <Button 
+        android:id="@+id/btn6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+         android:background="@drawable/jui_dialpad_off"/> 
+    </LinearLayout>
+     <ImageView 
+        android:id="@+id/img_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/jui_ic_in_call_touch_handle_normal"/>    
+        
+     <ImageView 
+        android:id="@+id/img_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/jieting_all"
+        android:visibility="gone"/>
+    <ImageView 
+        android:id="@+id/img_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/anim4"
+        android:visibility="gone"/>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="800dp"
+    ><!--  android:layout_marginTop="30dip"-->
+          <ImageView 
+        android:id="@+id/img_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:src="@drawable/jui_ic_lockscreen_decline_normal"/>
+          <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jui_ic_lockscreen_decline_normal"
+        android:layout_gravity="center_horizontal"
+        
+        />
+    
+</LinearLayout>    
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以下为遮罩图片变成圆形的图片" 
+        android:visibility="gone"/>
+    
+       <!-- 有遮罩图片 --> 
+    <com.example.tween.MaskImage
+         android:id="@+id/imageview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        maskimage:image="@drawable/picture_unknown"
+        maskimage:mask="@drawable/picture_unknown"
+        />
+     <com.example.tween.MaskImage
+         android:id="@+id/imageview_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"       
+        />
+    
+    <EditText 
+        android:id="@+id/edittext"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="48sp"
+        android:visibility="gone"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/handle_bg"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+      
+</LinearLayout>

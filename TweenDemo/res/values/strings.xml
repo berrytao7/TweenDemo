@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TweenDemo</string>
+    <string name="hello_world">Hello world!</string>
+
+    <color name="MediumSlate1">#FF9912</color>
+    <color name="MediumSlate2">#B03060</color>
+    <color name="MediumSlate3">#7FFF00</color>
+    <color name="list_divider">#33FFFFFF</color>
+    <color name="jui_list_text_color">#FFFFFF</color>
+    <color name="jui_list_text_pressed_color">#33FFFFFF</color>
+    
+     <color name="jui_msg_list_item_pressed">#C0C0C0</color>
+    
+</resources>
